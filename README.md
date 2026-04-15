@@ -102,16 +102,16 @@ This repository includes:
 ### Usage
 
 ```bash
-chmod +x /home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh
+chmod +x ./scripts/pull_datasets.sh
 
 # list all datasets and links
-/home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh --list
+./scripts/pull_datasets.sh --list
 
 # download all datasets that expose direct archive URLs
-/home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh --all
+./scripts/pull_datasets.sh --all
 
 # download a single dataset by manifest name
-/home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh --dataset DSD100
+./scripts/pull_datasets.sh --dataset DSD100
 ```
 
 Datasets without `direct_archive_url` are intentionally marked as manual/license-gated and should be obtained from their public links according to their terms.

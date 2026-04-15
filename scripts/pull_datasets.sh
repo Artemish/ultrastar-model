@@ -98,7 +98,7 @@ case "${MODE}" in
     list_manifest
     ;;
   all)
-    while IFS=$'\t' read -r dataset _ _ _ _; do
+    while IFS=$'\t' read -r dataset category public_link direct_url access; do
       [[ "${dataset}" == "dataset" || -z "${dataset}" ]] && continue
       download_dataset "${dataset}"
     done < "${MANIFEST}"
