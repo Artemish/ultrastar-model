@@ -92,6 +92,30 @@ Because no single dataset contains perfect UltraStar supervision, combine datase
 5. **Weakly supervised web-scale data**
    - YouTube + lyrics pairs with pseudo-labeling (high-confidence only)
 
+## Public dataset links and local pull script
+
+This repository includes:
+
+- `datasets/public_links.tsv`: dataset -> public link -> direct archive URL (if available) -> access mode
+- `scripts/pull_datasets.sh`: helper script to download datasets that have direct archive links
+
+### Usage
+
+```bash
+chmod +x /home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh
+
+# list all datasets and links
+/home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh --list
+
+# download all datasets that expose direct archive URLs
+/home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh --all
+
+# download a single dataset by manifest name
+/home/runner/work/ultrastar-model/ultrastar-model/scripts/pull_datasets.sh --dataset DSD100
+```
+
+Datasets without `direct_archive_url` are intentionally marked as manual/license-gated and should be obtained from their public links according to their terms.
+
 ## Data preprocessing strategy
 
 1. Normalize sample rate (e.g., 44.1kHz source, 16kHz ASR branch)
