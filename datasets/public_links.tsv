@@ -1,0 +1,12 @@
+dataset	category	public_link	direct_archive_url	access
+MUSDB18	source_separation	https://sigsep.github.io/datasets/musdb.html		manual_license_or_registration
+DSD100	source_separation	https://sisec.inria.fr/sisec-2016/professionally-produced-music-recordings/	https://zenodo.org/records/3464194/files/DSD100.zip?download=1	public
+MIR-1K	singing_voice_f0	https://sites.google.com/site/unvoicedsoundseparation/mir-1k	http://mirlab.org/dataset/public/MIR-1K.zip	public
+iKala	singing_voice_f0	https://mac.citi.sinica.edu.tw/ikala/		manual_request
+MedleyDB	singing_voice_f0	https://medleydb.weebly.com/download.html		manual_signup
+TONAS	singing_voice_f0	https://mtg.github.io/tonas/		manual
+DALI	lyrics_alignment	https://github.com/gabolsgabs/DALI		clone_repo_annotations
+Jamendo_lyrics	lyrics_alignment	https://developer.jamendo.com/v3.0		manual_api_or_licensed_corpus
+NUS_Sung	lyrics_alignment	https://smc.nus.edu.sg/		manual
+UltraStar_Community	ultrastar_supervision	https://usdb.animux.de/		license_filter_required
+YouTube_Lyrics_Weak	web_scale_weak_supervision	https://www.youtube.com/		no_bulk_download_use_terms_and_local_collection
